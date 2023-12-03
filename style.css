@@ -1,69 +1,70 @@
 *{
-background-color: black;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-.container-fluid{
-    padding-left: 5%;
-    padding-right: 5%;
     background-color: black;
-
-}
-
-body{
-    background-color: black;
-}
-p{
-color: white;
-}
-
-h1{
-    color:#CC9919
-}
-h5{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container-fluid{
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: black;
+    
+    }
+    
+    body{
+        background-color: black;
+    }
+    p{
     color: white;
-}
-.card-title{
+    }
+    
+    h1{
+        color:#CC9919
+    }
+    h5{
+        color: white;
+    }
+    .card-title{
+        color: white;
+    }
+    .nav-item > a{
     color: white;
-}
-.nav-item > a{
-color: white;
-}
-
-hr{
-    color: #CC9919;
-    width: 100%;
-    background: #fac02c;
-    height: 2px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
-
-
-.card-img-top{
-    max-width: 90%;
-    max-height: 55%;
-    margin: auto;
-    padding: 2%;
-    background-color: black;
-}
-
-.card{
-    background-color: black;
-}
-.collapse{
-    color: white;
-}
-
-.btn{
-background-color: #CC9919;
-}
-
-.btn:hover{
-    background-color: #fac02c;
-}
-
-footer{
-    background-color: black;
-}
+    }
+    
+    hr{
+        color: #CC9919;
+        width: 100%;
+        background: #fac02c;
+        height: 2px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    
+    
+    .card-img-top{
+        max-width: 90%;
+        max-height: 55%;
+        margin: auto;
+        padding: 2%;
+        background-color: black;
+    }
+    
+    .card{
+        background-color: black;
+        height: 80%;
+    }
+    .collapse{
+        color: white;
+    }
+    
+    .btn{
+    background-color: #CC9919;
+    }
+    
+    .btn:hover{
+        background-color: #fac02c;
+    }
+    
+    footer{
+        background-color: black;
+    }
