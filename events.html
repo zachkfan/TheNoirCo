@@ -18,45 +18,67 @@
 
 <nav>
 
-    <div class="row bg-info-subtle">
+    <div class="row">
+
+     
 
         <!-- Navigation Bar Implementaiton via Bootstrap -->
-        <ul class="nav justify-content-end nav-pills">
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="index.html"><img src="img\logo.PNG" style="float: left;" alt="logo"></a>
-            </li> -->
-            <div class=" col-lg-1 mx-2">
+        <ul class="navbar nav-pills justify-content-end">
+           
+            <div class = "nav-item col-lg-6 col-md-11 col-sm-10 col-10 justify-content-start">
+                <a href="index.html"><img src="img\logo.PNG" alt="logo"></a>
+            </div>
+            
+            <div class=" col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
-                    <a class="nav-link text-center" aria-current="page" href="index.html">About Us</a>
+                    <a class="nav-link text-center" aria-current="page" href="#">About Us</a>
                 </li>
 
             </div>
             <!-- Dropdown Menu Implementation -->
-            <div class="col-lg-1 mx-2">
+            <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
                     <a class="nav-link text-center" href="#">Store</a>
 
                 </li>
             </div>
-            <div class="col-lg-1 mx-2">
+            <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
                     <a class="nav-link text-center" href="#">Services</a>
                 </li>
             </div>
-            <div class="col-lg-1 mx-2">
+            <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
                     <a class="nav-link text-center" href="events.html">Events</a>
                 </li>
             </div>
-            <div class="col-lg-1 mx-2">
+            <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
-                    <a class="nav-link text-center" href="partners.html">Partners</a>
+                    <a class="nav-link text-center" href="#">Partners</a>
                 </li>
             </div>
+
+            <div class="d-lg-none ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-center" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false" style="font-size: xx-large;"> ≡ </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Store</a></li>
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="events.html">Events</a></li>
+                        <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+
+
+                    </ul>
+                </li>
+            </div>
+
         </ul>
     </div>
 
 </nav>
+
 
 <hr>
 

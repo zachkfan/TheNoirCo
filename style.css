@@ -68,3 +68,15 @@
     footer{
         background-color: black;
     }
+    
+    .dropdown-item{
+        background-color: #CC9919;
+    }
+    
+    .dropdown-item:hover{
+        background-color: #fac02c;
+    }
+    
+    li.nav-item > a:hover{
+    color: #fac02c;
+    }
