@@ -16,7 +16,7 @@
     color: white;
     }
     
-    h1{
+    h1, h4 {
         color:#CC9919
     }
     h5{
@@ -78,4 +78,114 @@
     
     li.nav-item > a:hover{
     color: #fac02c;
+    }
+
+    /* home page styling */
+
+    .btn-home {
+        background-color: black;
+        border-color: #CC9919;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .btn-home:hover {
+        background-color: #fac02c;
+        color: black;
+    }
+
+    .content {
+        margin-top: 5%;
+    }
+
+    .footer-home {
+        background-color: #CC9919;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .contact-btn {
+        background-color: #CC9919;
+        border-color: white;
+        color: white;
+        border-radius: 5px;
+        width: fit-content;
+    }
+
+    .contact-btn:hover {
+        background-color: white;
+        color: #CC9919;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+    #logo {
+        width: 35%;
+    
+    }
+
+    .banner {
+        background-color: white;
+        margin-top: 0%;
+    }
+
+    .home-banner {
+        background-color: white;
+        margin: auto;
+    }
+
+    .home-banner-description {
+        text-align: center;
+        font-style: oblique;
+        color: black;
+    }
+
+    .rect-image {
+        max-width: 90%;
+    }
+
+    .side-descr {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .center-content {
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .w-100 {
+        max-width: 35%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .carousel-control-prev-icon {
+        margin-right: -300%;
+    } 
+    .carousel-control-next-icon {
+        margin-left: -300%;
+    }
+
+    .circular-img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .white-text {
+        color: white;
     }
