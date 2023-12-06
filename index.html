@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Partners</title>
+    <title>The Noir Co</title>
     <!-- Bootstrap Implementation -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -13,69 +13,69 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Playfair:opsz@5..1200&display=swap"
         rel="stylesheet">
     <!-- Google Font -->
+    <link rel="icon" href="img/favicon-transparent.png">
+
+    <script src="app.js"></script>
 </head>
-<!-- The componenets I chose to implement was Navbar, Dropdown Menu, Carousel, Card Componenet, and Collapse -->
 
-<nav>
-
-    <div class="row">
+<div class="row">
 
      
 
-        <!-- Navigation Bar Implementaiton via Bootstrap -->
-        <ul class="navbar nav-pills justify-content-end">
-           
-            <div class = "nav-item col-lg-6 col-md-11 col-sm-10 col-10 justify-content-start">
-                <a href="index.html"><img src="img\logo.PNG" alt="logo"></a>
-            </div>
-            
-            <div class=" col-lg-1 mx-2 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link text-center" aria-current="page" href="#">About Us</a>
-                </li>
+    <!-- Navigation Bar Implementaiton via Bootstrap -->
+    <ul class="navbar nav-pills justify-content-end">
+       
+        <div class = "nav-item col-lg-6 col-md-11 col-sm-10 col-10 justify-content-start">
+            <a href="index.html"><img src="img\logo.PNG" alt="logo"></a>
+        </div>
+        
+        <div class=" col-lg-1 mx-2 d-none d-lg-block">
+            <li class="nav-item">
+                <a class="nav-link text-center" aria-current="page" href="#">About Us</a>
+            </li>
 
-            </div>
-            <!-- Dropdown Menu Implementation -->
-            <div class="col-lg-1 mx-2 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="#">Store</a>
+        </div>
+        <!-- Dropdown Menu Implementation -->
+        <div class="col-lg-1 mx-2 d-none d-lg-block">
+            <li class="nav-item">
+                <a class="nav-link text-center" href="#">Store</a>
 
-                </li>
-            </div>
-            <div class="col-lg-1 mx-2 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="#">Services</a>
-                </li>
-            </div>
-            <div class="col-lg-1 mx-2 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="events.html">Events</a>
-                </li>
-            </div>
-            <div class="col-lg-1 mx-2 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="#">Partners</a>
-                </li>
-            </div>
+            </li>
+        </div>
+        <div class="col-lg-1 mx-2 d-none d-lg-block">
+            <li class="nav-item">
+                <a class="nav-link text-center" href="#">Services</a>
+            </li>
+        </div>
+        <div class="col-lg-1 mx-2 d-none d-lg-block">
+            <li class="nav-item">
+                <a class="nav-link text-center" href="events.html">Events</a>
+            </li>
+        </div>
+        <div class="col-lg-1 mx-2 d-none d-lg-block">
+            <li class="nav-item">
+                <a class="nav-link text-center" href="#">Partners</a>
+            </li>
+        </div>
 
-            <div class="d-lg-none ">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-center" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false" style="font-size: xx-large;"> ≡ </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">About Us</a></li>
-                        <li><a class="dropdown-item" href="#">Store</a></li>
-                        <li><a class="dropdown-item" href="#">Services</a></li>
-                        <li><a class="dropdown-item" href="events.html">Events</a></li>
-                        <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+        <div class="d-lg-none ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false" style="font-size: xx-large;"> ≡ </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Store</a></li>
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="events.html">Events</a></li>
+                    <li><a class="dropdown-item" href="partners.html">Partners</a></li>
 
 
-                    </ul>
-                </li>
-            </div>
+                </ul>
+            </li>
+        </div>
 
-        </ul>
-    </div>
+    </ul>
+</div>
 
 </nav>
 
@@ -85,10 +85,96 @@
 <body>
     <div class="container-fluid">
 
+        <!-- TODO: js popup for Are you 21? -->
 
         <!-- Heading -->
-
+        <!-- banner with the noir co, sit back and sip black, then text underneath -->
+        <div class="row content banner"> 
+            <div class="col-sm-12 home-banner">
+                <img id="logo" src="img/homepage_logo.PNG" alt="" class="center">
+                <p class="home-banner-description">
+                    Giving a platform to black-owned wines and redefining the black-owned wine industry 
+                </p>
+            </div>
         </div>
+        
+        <!-- picture with text "What we do" to the right of it, description -->
+        <div class="row content center-content">
+            <div class="col-lg-4 col-md-3 col-sm-12 d-lg-block d-md-block d-sm-block">
+              <img src="img/whatwedo-square.JPG" alt="What We Do Image" class="rect-image">
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-block side-descr">
+                <h4>What We Do</h4>
+                <p>We are a boutique wine consulting firm committed to curating luxury wine events, services, and merchandise that highlight black-owned brands in support of the black-owned wine industry. We offer private tastings, luxury wine boxes, and WINEtending services. </p>
+                <a href="#"><button class="btn-home">Read More</button></a>
+                
+            </div>
+        </div>
+
+        <!-- carousel of pictures -->
+        <div id="carouselFt" class="row content carousel slide" data-bs-ride="carousel">
+            <hr style="color: #fac02c;">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/carousel1.JPG" class="d-block w-100" alt="...">
+              </div>
+    
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/carousel2.JPG" class="d-block w-100" alt="...">
+              </div>
+    
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/carousel3.JPG" class="d-block w-100" alt="...">
+              </div>    
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/carousel4.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFt" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+    
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFt" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr style="color: #fac02c;">
+
+        <!-- try our public wine tasting class, picture to right -->
+        <div class="row content center-content">
+            <div class="col-lg-6 col-md-5 col-sm-12 d-lg-block d-md-block d-sm-block side-descr">
+                <h4>Try Our Public Wine Tasting</h4>
+                <p>As a wine consulting firm, our ultimate goal for our wine tasting clients is to enhance their palate while exposing them to black-owned wine brands and educating them about the makings of wine.</p>
+                <!-- all services button underneath the public wine tasting -->
+                <!-- TO DO: link to the services tab? -->
+                <a href="#">
+                    <button class="btn-home" >All Services</button>
+                </a>
+                
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12 d-lg-block d-md-block d-sm-block">
+              <img src="img/alc-square.JPG" alt="What We Do Image" class="circular-img">
+            </div>
+            
+        </div>
+
+        <!-- have any questions footer thing -- gold background + contact us button + phone number -->
+        <div class="row content footer-home">
+            <div class="col-12 d-lg-block d-md-block d-sm-block">
+                <h6 class="white-text">Have Any Questions?</h6>
+                <h6>
+                    <a href= “tel:+8059316647 class="white-text"> (805)-931-NOIR (6647)</a>
+                </h6>
+                
+            </div>
+            <button class="contact-btn col-2" onclick="location.href='mailto:info@thenoirco.com'";">Contact Us</button>
+        </div>
+
+    </div>
 
         <hr>
 
