@@ -189,3 +189,108 @@
     .white-text {
         color: white;
     }
+
+    #calendar {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .calendar-container {
+        background: #272727;
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        color:#aeabab
+    }
+    
+    .calendar-container header {
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px;
+        justify-content: space-between;
+    }
+    
+    .calendar-navigation {
+        display: flex;
+    }
+    
+    .calendar-navigation span {
+        height: 38px;
+        width: 38px;
+        margin: 0 1px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+        user-select: none;
+        color: #aeabab;
+        font-size: 1.9rem;
+    }
+    
+    .calendar-navigation span:last-child {
+        margin-right: -10px;
+    }
+    
+    .calendar-current-date {
+        font-weight: 500;
+        font-size: 1.45rem;
+    }
+    
+    .calendar-body {
+        padding: 20px;
+    }
+    
+    .calendar-body ul {
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+    }
+    
+    .calendar-dates li {
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .calendar-dates li.inactive {
+        color: #aeabab;
+    }
+    
+    .calendar-dates li.active {
+        color: #aeabab;
+    }
+    
+    .calendar-dates li::before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+​
+    .calendar-dates li.highlighted {
+        background-color: #CC9919;
+        color: white;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .calendar-container {
+            width: 70%; /* Adjusted width for medium screens */
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .calendar-container {
+            width: 90%; /* Adjusted width for smaller screens */
+        }
+    }

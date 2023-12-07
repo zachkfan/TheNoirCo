@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Partners</title>
+    <title>Events</title>
     <!-- Bootstrap Implementation -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,20 +12,50 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Playfair:opsz@5..1200&display=swap"
         rel="stylesheet">
+    <link
+        href=" https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Google Font -->
+    <script>
+        // Initializes a countdown timer that displays the number of days and hours remaining until the event date.
+        window.onload = function () {
+            //this is the date of the next NoirCo event
+            var eventDate = new Date("2023-12-31 23:59:59");
+
+            var countdownInterval = setInterval(function () {
+                //get the current date and time
+                var now = new Date().getTime();
+                //calculate how far the eventDate is from current date and time
+                var distance = eventDate - now;
+
+                //calculate the days and hours remaining. algorithm explained below:
+
+                //Calculate the total number of milliseconds between the event date (eventDate) and the current date and time (now).
+                //Divide the total number of milliseconds by the number of milliseconds in a day (1000 * 60 * 60 * 24).
+                //Round down the result using the Math.floor function to get the whole number of days.
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+
+                //display time remaning till event
+                document.getElementById("timer").innerHTML = 
+                    days + " days, " + hours + " hours";
+            }, 1000);//1000 is the interval at which this function is called (1000ms)
+        };
+    </script>
 </head>
-<!-- The componenets I chose to implement was Navbar, Dropdown Menu, Carousel, Card Componenet, and Collapse -->
 
 <nav>
 
-    <div class="row">
+    <div class="row" style="background-color:black;">
 
      
 
         <!-- Navigation Bar Implementaiton via Bootstrap -->
-        <ul class="navbar nav-pills justify-content-end">
+        <ul class="navbar nav-pills justify-content-start ps-5">
            
-            <div class = "nav-item col-lg-6 col-md-11 col-sm-10 col-10 justify-content-start">
+            <div class = "nav-item col-lg-6 col-md-9 col-sm-9 col-9 justify-content-start">
                 <a href="index.html"><img src="img\logo.PNG" alt="logo"></a>
             </div>
             
@@ -49,16 +79,16 @@
             </div>
             <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
-                    <a class="nav-link text-center" href="events.html">Events</a>
+                    <a class="nav-link text-center" href="events.html" style="text-decoration: underline; text-decoration-color: #fac02c;">Events</a>
                 </li>
             </div>
             <div class="col-lg-1 mx-2 d-none d-lg-block">
                 <li class="nav-item">
-                    <a class="nav-link text-center" href="#">Partners</a>
+                    <a class="nav-link text-center" href="partners.html">Partners</a>
                 </li>
             </div>
 
-            <div class="d-lg-none ">
+            <div class="d-lg-none col-md-3">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-center" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false" style="font-size: xx-large;"> ≡ </a>
@@ -83,39 +113,113 @@
 <hr>
 
 <body>
-    <div class="container-fluid">
-
+    <div class="container-fluid" style="background-color: white; padding-bottom: 1px;" >
 
         <!-- Heading -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="background-color: white;">
             <div class="col-12 mt-5">
-                <h5 class="text-center">Upcoming Events</h5>
+                <h5 class="text-center" style="color: black;">Upcoming Event</h5>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="background-color: white;">
             <div class="col-12">
-                <h1 class = "text-center">Check out events calendar</h1>
+                <h1 class = "text-center" style="font-size: 30px; margin-top:10px;font-weight: bold;">The Noir Co Wine Tasting</h1>
             </div>
         </div>
 
-        <hr>
-
-        <footer class="text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                <p> Copyright © 2022 The Noir Co - All Rights Reserved</p>
-                <a class="text-body" style="color: white;" href="#">thenoirco.com</a>
+        <div class="row" style="background-color: white;">
+            <div class="col-7 mx-auto" >
+                <p class = "text-center" style="font-size: 18px; margin-top:10px; color: black;">
+                    As a wine consulting firm, our ultimate goal for our wine tasting clients is to enhance their palate while exposing them to black-owned wine brands and educating them about the makings of wine.
+                <br>
+                <br>
+                Come out to our wine tasting to experience a taste of the magic which black-owned wine brands have to offer.
+                </p>
             </div>
-            <!-- Copyright -->
-        </footer>
+        </div>
 
+        <div class="row" style="background-color: white;">
+            <div class="col-7 mx-auto text-center" >
+                <h1 class="timer-text" id="timer" class="text-center" style="font-size: 64px; margin-top:10px; color: black; font-weight:bold;"></h1>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:30px; margin-bottom:20px; background-color: white;">
+            <div class="col-4 mx-auto text-center" style="background-color: white;">
+                <button type="button" class="btn" style="color:white; padding-left:20px; padding-right:20px;">Buy Tickets</button>
+            </div>
+        </div>
 
         <!-- Bootstrap Implementation -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
 
+    </div>
+
 </body>
+
+<h1 class = "text-center" style="font-size: 30px; margin-top:50px;font-weight: normal;">Check out our upcoming events calendar</h1>
+
+<div id="calendar" style="margin-top:20px; margin-bottom:20px;">
+    <div class="calendar-container">
+        <header>
+            <div class="calendar-navigation">
+                <span>&#8249;</span>
+                <span>&#8250;</span>
+            </div>
+            <div class="calendar-current-date">December 2023</div>
+        </header>
+        <div class="calendar-body">
+            <ul class="calendar-dates">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li class="highlighted">31</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<footer class="text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        <p> Copyright © 2022 The Noir Co - All Rights Reserved</p>
+        <a class="text-body" href="#"> <p>thenoirco.com </p></a>
+        <button class="contact-btn col-2" onclick="location.href='mailto:info@thenoirco.com'";>Contact Us</button>
+    </div>
+    <!-- Copyright -->
+</footer>
+
 
 </html>
